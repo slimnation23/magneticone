@@ -1,0 +1,105 @@
+@media (max-width: 1300px) {
+    .contact-info__form-inputs_select select {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1241px) {
+    .contact {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        img {
+            display: none;
+        }
+        &-info {
+            h1, p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .bottom-nav {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &_btn {
+            display: block;
+        }
+
+        &_menu {
+            display: none;
+            flex-direction: column;
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            &__active {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    a {
+                        color: white;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 876px) {
+    .header-top {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 840px) {
+    .tasksat-comments {
+        flex-wrap: wrap;
+
+        &__comment {
+            margin-bottom: 25px;
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .news-content {
+        flex-wrap: wrap;
+        &__new {
+            &:first-child {
+                margin-right: 0;
+            }
+            &:last-child {
+                padding-bottom: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 671px) {
+    .header-top__contacts {
+        text-align: center;
+        margin-top: 25px;
+        &-contact {
+            flex-wrap: wrap;
+            justify-content: center;
+            &:first-child {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 613px) {
+    .header-content__select {
+        justify-content: center;
+    }
+}

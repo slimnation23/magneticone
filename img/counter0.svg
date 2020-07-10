@@ -1,0 +1,44 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="56px" height="66px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="2.5px" y="0px" width="53px" height="66px"  >
+    <feOffset in="SourceAlpha" dx="0.5" dy="0.866" />
+    <feGaussianBlur result="blurOut" stdDeviation="1" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+<filter id="Filter_1">
+    <feOffset in="SourceAlpha" dx="0.5" dy="0.866" />
+    <feGaussianBlur result="blurOut" stdDeviation="0" />
+    <feFlood flood-color="rgb(255, 255, 255)" result="floodOut" />
+    <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+    <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+    <feBlend mode="normal" in2="SourceGraphic" />
+</filter>
+
+</defs>
+<g filter="url(#Filter_0)">
+<g filter="url(#Filter_1)">
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M9.698,-0.006 L46.302,-0.006 C49.734,-0.006 52.516,2.746 52.516,6.141 L52.516,56.858 C52.516,60.253 49.734,63.005 46.302,63.005 L9.698,63.005 C6.266,63.005 3.484,60.253 3.484,56.858 L3.484,6.141 C3.484,2.746 6.266,-0.006 9.698,-0.006 Z"/>
+</g></g>
+<path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(227, 227, 227)" fill="rgb(255, 255, 255)"
+ d="M3.500,28.999 L6.167,28.999 C6.903,28.999 7.500,29.696 7.500,30.555 L7.500,34.444 C7.500,35.303 6.903,35.999 6.167,35.999 L3.500,35.999 L3.500,28.999 Z"/>
+<path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(227, 227, 227)" fill="rgb(255, 255, 255)"
+ d="M52.500,28.999 L49.833,28.999 C49.097,28.999 48.500,29.696 48.500,30.555 L48.500,34.444 C48.500,35.303 49.097,35.999 49.833,35.999 L52.500,35.999 L52.500,28.999 Z"/>
+<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 1.66610073571024, 0, 0, 1.70029057700291,18.6075268817204, 48.1527604815276)" font-size="28.23px"><tspan font-size="28.23px" font-family="OpenSans" fill="#404040">&#48;</tspan></text>
+<path fill-rule="evenodd"  fill="rgb(227, 227, 227)"
+ d="M3.500,32.999 L3.500,31.999 L52.500,31.999 L52.500,32.999 L3.500,32.999 Z"/>
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M53.000,26.999 C53.276,26.999 53.500,27.223 53.500,27.499 L53.500,37.499 C53.500,37.776 53.276,37.999 53.000,37.999 C52.724,37.999 52.500,37.776 52.500,37.499 L52.500,27.499 C52.500,27.223 52.724,26.999 53.000,26.999 Z"/>
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M3.000,26.999 C3.276,26.999 3.500,27.223 3.500,27.499 L3.500,37.499 C3.500,37.776 3.276,37.999 3.000,37.999 C2.724,37.999 2.500,37.776 2.500,37.499 L2.500,27.499 C2.500,27.223 2.724,26.999 3.000,26.999 Z"/>
+</svg>
