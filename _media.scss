@@ -11,11 +11,6 @@
         img {
             display: none;
         }
-        &-info {
-            h1, p {
-                text-align: center;
-            }
-        }
     }
 }
 
@@ -101,5 +96,16 @@
 @media (max-width: 613px) {
     .header-content__select {
         justify-content: center;
+    }
+}
+
+@media (max-width: 540px) {
+    .contact-info__form-inputs {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-info__form-inputs input:first-child {
+        margin-right: 0;
     }
 }

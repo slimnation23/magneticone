@@ -393,6 +393,7 @@ ul {
   font-weight: 400;
   margin-bottom: 49px;
   line-height: 1;
+  text-align: center;
 }
 
 .simpleblock-content {
@@ -457,6 +458,7 @@ ul {
 
 .btn-blue button {
   color: #63b6f1;
+  background: transparent;
 }
 
 .btn-grey {
@@ -466,6 +468,7 @@ ul {
 
 .btn-grey button {
   color: #999898;
+  background: transparent;
 }
 
 .counter {
@@ -774,8 +777,8 @@ ul {
 }
 
 .contact {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
   background-color: #e6ded1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1058,9 +1061,6 @@ footer h4 {
   .contact img {
     display: none;
   }
-  .contact-info h1, .contact-info p {
-    text-align: center;
-  }
 }
 
 @media (max-width: 1180px) {
@@ -1156,6 +1156,22 @@ footer h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact-info__form-inputs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-info__form-inputs input:first-child {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
